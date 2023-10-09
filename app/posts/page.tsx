@@ -1,30 +1,25 @@
 import Image from 'next/image';
-import { prisma } from '../api/prismaclient/route';
-
+import { prisma } from '@/app/api/client';
 import { Post } from '@prisma/client';
-import Navbar from '../(shared)/Navbar';
 import Link from 'next/link';
 
-type postProps = {
-  className?: string;
-};
 const getPosts = async () => {
   const posts = await prisma.post.findMany();
 
   return posts;
 };
 
-const Posts = async ({ className }: postProps) => {
+const Posts = async () => {
   const posts: Array<Post> = await getPosts();
 
   return (
-    <section className={`${className} w-full h-full mx-1 my-3`}>
+    <section className="w-full h-full mx-1 my-3">
       {posts.map((post) => (
         <div
           key={post.id}
           className="flex flex-col sm:flex-row w-full h-96 justify-center items-center gap-2 py-5 "
         >
-          <div className={`${className} w-4/5 sm:w-1/2 h-full relative`}>
+          <div className="w-4/5 sm:w-1/2 h-full relative">
             <Image
               src={post?.image}
               alt="posts"

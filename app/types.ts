@@ -1,4 +1,4 @@
-export type FormattedPost = {
+export type Post = {
   id: string;
   createdAt: string;
   updatedAt: string;

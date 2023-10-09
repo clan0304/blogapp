@@ -1,4 +1,4 @@
-import { prisma } from '@/app/api/prismaclient/route';
+import { prisma } from '@/app/api/client';
 import { Post } from '@prisma/client';
 import Image from 'next/image';
 
@@ -7,7 +7,7 @@ type Props = {
 };
 
 const getPost = async (id: string) => {
-  const post: Post | null = await prisma.post.findUnique({
+  const post = await prisma.post.findUnique({
     where: { id },
   });
 
@@ -28,7 +28,7 @@ const page = async ({ params }: Props) => {
   return (
     <section className="flex flex-col gap-3 px-5 items-center w-full h-full">
       <div>
-        <h4 className="text-4xl font-bold pb-20">{post.title}</h4>
+        <h4 className="text-4xl font-bold pb-10">{post.title}</h4>
       </div>
       <div className="w-full sm:w-2/3 h-[400px] relative">
         <Image
@@ -43,7 +43,7 @@ const page = async ({ params }: Props) => {
         />
       </div>
       <div className="w-full sm:w-2/3 pt-5">
-        <h4 className="text-md">{post.content}</h4>
+        <h4 className="text-md indent-2">{post.content}</h4>
       </div>
 
       <div className="flex flex-col text-center items-center pt-10">

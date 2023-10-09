@@ -8,14 +8,11 @@ type MainPostProps = {
 
 const Main = ({ mainPost }: MainPostProps) => {
   return (
-    <section className="w-full px-3">
+    <section className="w-full px-3 py-3">
       <div className="hidden sm:flex justify-between mx-5">
         <div className="font-bold text-lg">
           How about going to these cafes if you are in Melbourne?
         </div>
-        <Link href={'http://localhost:3000/posts'}>
-          <button>More Post?</button>
-        </Link>
       </div>
       <div className="sm:grid gap-3 grid-cols-2 grid-rows-2 sm:h-[600px] my-5">
         <Card className="col-span-1 row-span-2 m-1" post={mainPost[0]} />
@@ -42,6 +39,12 @@ const Main = ({ mainPost }: MainPostProps) => {
           className="col-span-1 row-span-1 m-1  bg-gray-500"
           post={mainPost[5]}
         />
+      </div>
+      <div className="flex justify-center sm:justify-end items-center">
+        <div className="px-3 text-lg">Do you want more Post?</div>
+        <Link href="http://localhost:3000/posts">
+          <button className="bg-slate-300 text-3xl p-2">Click Here!</button>
+        </Link>
       </div>
     </section>
   );

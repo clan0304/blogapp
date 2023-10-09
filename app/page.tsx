@@ -1,6 +1,6 @@
 import { Post } from '@prisma/client';
 import Main from './(home)/Main';
-import { prisma } from './api/prismaclient/route';
+import { prisma } from './api/client';
 
 const getPosts = async () => {
   const posts = await prisma.post.findMany();
