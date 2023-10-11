@@ -49,7 +49,10 @@ const page = async ({ params }: Props) => {
       <div className="flex flex-col text-center items-center pt-10">
         <h4 className="text-xl font-bold">Address: {post.location}</h4>
         <a href={post.website}>
-          <h4 className="text-lg">{post.website}</h4>
+          <h4 className="text-lg underline">{post.website}</h4>
+        </a>
+        <a href={post.map}>
+          <h4 className="text-lg underline">Map</h4>
         </a>
       </div>
     </section>

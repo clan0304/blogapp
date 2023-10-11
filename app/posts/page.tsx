@@ -38,7 +38,7 @@ const Posts = async () => {
             <Link
               href={`https://blogapp-iota-inky.vercel.app/posts/${post.id}`}
             >
-              <button className="sm:py-3 p-4 rounded-full bg-slate-500 text-white">
+              <button className="sm:py-3 p-4 rounded-full bg-slate-100 text-black font-bold">
                 Read More
               </button>
             </Link>

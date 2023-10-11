@@ -13,7 +13,7 @@ const Card = ({ post, className }: CardProps) => {
   return (
     <Link
       className={`${className} sm:h-auto relative w-full block h-96 hover:opacity-70`}
-      href={`https://blogapp-iota-inky.vercel.app/posts/${post.id}`}
+      href={`/posts/${post.id}`}
     >
       <div className="`z-0 relative w-full h-full">
         <Image

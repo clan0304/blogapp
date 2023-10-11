@@ -43,7 +43,9 @@ const Main = ({ mainPost }: MainPostProps) => {
       <div className="flex justify-center sm:justify-end items-center">
         <div className="px-3 text-lg">Do you want more Post?</div>
         <Link href="https://blogapp-iota-inky.vercel.app/posts">
-          <button className="bg-slate-300 text-3xl p-2">Click Here!</button>
+          <button className="bg-wh-100 text-3xl p-2 rounded-md font-bold">
+            Click Here!
+          </button>
         </Link>
       </div>
     </section>
