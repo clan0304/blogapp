@@ -35,7 +35,9 @@ const Posts = async () => {
           <div className="flex flex-col justify-center items-center w-full h-full sm:w-1/5 text-center gap-1 ">
             <h3 className="text-lg">{post.title}</h3>
             <h4 className="line-clamp-2 w-4/5 sm:my-3">{post.content}</h4>
-            <Link href={`http://localhost:3000/posts/${post.id}`}>
+            <Link
+              href={`https://blogapp-iota-inky.vercel.app/posts/${post.id}`}
+            >
               <button className="sm:py-3 p-4 rounded-full bg-slate-500 text-white">
                 Read More
               </button>
