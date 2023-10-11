@@ -17,7 +17,7 @@ const Posts = async () => {
       {posts.map((post) => (
         <div
           key={post.id}
-          className="flex flex-col sm:flex-row w-full h-96 justify-center items-center gap-2 py-5 "
+          className="flex flex-col sm:flex-row w-full h-96 justify-center items-center gap-10 py-5 "
         >
           <div className="w-4/5 sm:w-1/2 h-full relative">
             <Image
