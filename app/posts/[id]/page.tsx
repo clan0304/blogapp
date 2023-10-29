@@ -26,7 +26,7 @@ const page = async ({ params }: Props) => {
     return <div>Post is not found!</div>;
   }
   return (
-    <section className="flex flex-col gap-3 px-5 items-center w-full h-full">
+    <section className="flex flex-col gap-3 px-5 py-10 items-center w-full h-full">
       <div>
         <h4 className="text-4xl font-bold pb-10">{post.title}</h4>
       </div>
@@ -46,13 +46,13 @@ const page = async ({ params }: Props) => {
         <h4 className="text-md indent-2">{post.content}</h4>
       </div>
 
-      <div className="flex flex-col text-center items-center pt-10">
+      <div className="flex flex-col text-center items-center pt-10 gap-3">
         <h4 className="text-xl font-bold">Address: {post.location}</h4>
         <a href={post.website}>
           <h4 className="text-lg underline">{post.website}</h4>
         </a>
         <a href={post.map}>
-          <h4 className="text-lg underline">Map</h4>
+          <h4 className="text-lg underline">Google Map</h4>
         </a>
       </div>
     </section>
