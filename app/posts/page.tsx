@@ -32,13 +32,13 @@ const Posts = async () => {
               priority
             />
           </div>
-          <div className="flex flex-col justify-center items-center w-full h-full sm:w-1/5 text-center gap-1 ">
+          <div className="flex flex-col justify-center items-center w-full h-full sm:w-1/5 text-center gap-2 ">
             <h3 className="text-lg">{post.title}</h3>
             <h4 className="line-clamp-2 w-4/5 sm:my-3">{post.content}</h4>
             <Link
               href={`https://blogapp-iota-inky.vercel.app/posts/${post.id}`}
             >
-              <button className="sm:py-3 p-4 rounded-full bg-slate-100 text-black font-bold">
+              <button className="sm:py-3 p-4 rounded-full bg-purple-600 text-white font-semibold">
                 Read More
               </button>
             </Link>

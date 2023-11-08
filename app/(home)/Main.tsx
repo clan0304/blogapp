@@ -40,11 +40,10 @@ const Main = ({ mainPost }: MainPostProps) => {
           post={mainPost[5]}
         />
       </div>
-      <div className="flex justify-center gap-3 sm:justify-end items-center">
-        <div className="px-3 text-lg">Do you want more Post?</div>
+      <div className="flex justify-center gap-3 items-center">
         <Link href="https://blogapp-iota-inky.vercel.app/posts">
-          <button className="bg-wh-100 text-3xl p-4 rounded-full font-bold">
-            Click Here!
+          <button className="text-3xl text-white px-6 py-4 rounded-full font-semibold bg-purple-600">
+            See more Post!
           </button>
         </Link>
       </div>
