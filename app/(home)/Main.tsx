@@ -14,7 +14,7 @@ const Main = ({ mainPost }: MainPostProps) => {
           How about going to these cafes if you are in Melbourne?
         </div>
       </div>
-      <div className="sm:grid gap-3 grid-cols-2 grid-rows-2 sm:h-[600px] my-5">
+      <div className="sm:grid gap-5 grid-cols-2 grid-rows-2 sm:h-[600px] my-5">
         <Card className="col-span-1 row-span-2 m-1" post={mainPost[0]} />
         <Card
           className="col-span-1 row-span-1 m-1  bg-gray-500"
@@ -26,7 +26,7 @@ const Main = ({ mainPost }: MainPostProps) => {
         />
       </div>
 
-      <div className="sm:grid gap-3 grid-cols-2 grid-rows-2 sm:h-[600px] my-10">
+      <div className="sm:grid gap-5 grid-cols-2 grid-rows-2 sm:h-[600px] my-10">
         <Card
           className="col-span-1 row-span-1 m-1  bg-gray-500"
           post={mainPost[3]}
@@ -42,7 +42,7 @@ const Main = ({ mainPost }: MainPostProps) => {
       </div>
       <div className="flex justify-center gap-3 items-center">
         <Link href="https://blogapp-iota-inky.vercel.app/posts">
-          <button className="text-3xl text-white px-6 py-4 rounded-full font-semibold bg-purple-600">
+          <button className="text-3xl text-white px-14 py-4 rounded-lg font-semibold bg-purple-600">
             See more Post!
           </button>
         </Link>
